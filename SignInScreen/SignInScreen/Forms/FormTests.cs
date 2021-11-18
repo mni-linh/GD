@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using msword = Microsoft.Office.Interop.Word;
 using System.Diagnostics;
-
+using Syncfusion.DocIO;
+using Syncfusion.DocIO.DLS;
 namespace SignInScreen.Forms
 {
     public partial class FormTests : Form
@@ -43,39 +44,38 @@ namespace SignInScreen.Forms
 
         private void panel1_MouseHover(object sender, EventArgs e)
         {
-            panel1.BackColor = Color.FromArgb(74, 104, 148);
+            panelExam1.BackColor = Color.FromArgb(74, 104, 148);
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnExam1_Click(object sender, EventArgs e)
         {
-            
-           System.IO.File.Copy("C:/Users/Admin/OneDrive/Documents/templates/Templates1.docx", "C:/Users/Admin/OneDrive/Documents/Templates1_Copy.docx", true);
-            //Microsoft.Office.Interop.Word.Application ap = new Microsoft.Office.Interop.Word.Application();
-            //Document document = ap.Documents.Open(@"C:/Users/Admin/OneDrive/Documents/templates/Templates1.docx");
-            //Console.WriteLine("asfafdsv");
-            string a = "C:/Users/Admin/OneDrive/Documents/templates/Templates1.docx";// string a là đường dẫn cụ thể tới cái file word bạn muốn mở ra
-            msword.Application word = new msword.Application();
-            object miss = System.Reflection.Missing.Value;
-            object path = @"C:\Users\Admin\OneDrive\Documents\templates\Templates1.docx";
-            object readOnly = false;
-            object missing = System.Type.Missing;
-            msword.Document doc = word.Documents.Open(ref path,
-                    ref miss, ref miss, ref miss, ref miss,
-                    ref miss, ref miss, ref miss, ref miss,
-                    ref miss, ref miss, ref miss, ref miss,
-                    ref miss, ref miss, ref miss);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //System.IO.File.Copy("C:/Users/Admin/OneDrive/Documents/templates/Templates1.docx", "C:/Users/Admin/OneDrive/Documents/Templates1_Copy.docx", true);
+            System.IO.File.Copy("C:/Users/Admin/OneDrive/Documents/templates/Templates1.docx", "C:/Users/Admin/OneDrive/Documents/Templates1_Copy.docx", true);
             //Microsoft.Office.Interop.Word.Application ap = new Microsoft.Office.Interop.Word.Application();
             //Document document = ap.Documents.Open(@"C:/Users/Admin/OneDrive/Documents/templates/Templates1_Copy.docx");
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = @"C:\Program Files\Microsoft Office\root\Office16\WinWord.exe";
+            startInfo.Arguments = "C:/Users/Admin/OneDrive/Documents/Templates1_Copy.docx";
+            Process.Start(startInfo);
+
+            // Open Status Task
+            new StatusScreen().Show();
+            this.Hide();
+
         }
+
+        private void panelExam1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+        /*
+private void btnCheck_Click(object sender, EventArgs e)
+{
+   //WordDocument document = new saWordDocument("Template.docx");
+   //TextSelection[] textSelections = document.FindAll("Your", true, true);
+  // lblOutput = textSelections.
+}*/
     }
 }

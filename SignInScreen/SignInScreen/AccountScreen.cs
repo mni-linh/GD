@@ -32,7 +32,7 @@ namespace SignInScreen
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        
+
         private Color SelectThemeColor()
         {
             int index = random.Next(Themes.ColorList.Count);
@@ -132,11 +132,6 @@ namespace SignInScreen
 
         }
 
-        private void panelDesktop_MouseDown(object sender, MouseEventArgs e)
-        {
-            
-        }
-
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -161,6 +156,9 @@ namespace SignInScreen
             this.WindowState = FormWindowState.Minimized;
 
         }
+
+
+
 
     }
 }

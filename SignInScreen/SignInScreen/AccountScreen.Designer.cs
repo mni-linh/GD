@@ -277,7 +277,6 @@ namespace SignInScreen
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(855, 442);
             this.panelDesktop.TabIndex = 2;
-            this.panelDesktop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelDesktop_MouseDown);
             // 
             // AccountScreen
             // 
@@ -291,7 +290,6 @@ namespace SignInScreen
             this.Name = "AccountScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Account";
-            this.Load += new System.EventHandler(this.AccountScreen_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panelTitleBar.ResumeLayout(false);

@@ -31,3 +31,8 @@ F:\Study\3rdyrs_1st\C#Windows\MSW\Winform UI\SignInScreen\SignInScreen\bin\Debug
 F:\Study\3rdyrs_1st\C#Windows\MSW\Winform UI\SignInScreen\SignInScreen\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 F:\Study\3rdyrs_1st\C#Windows\MSW\Winform UI\SignInScreen\SignInScreen\obj\Debug\net5.0-windows\SignInScreen.csproj.CopyComplete
 F:\Study\3rdyrs_1st\C#Windows\MSW\Winform UI\SignInScreen\SignInScreen\bin\Debug\net5.0-windows\Microsoft.Office.Interop.Word.dll
+F:\Study\3rdyrs_1st\C#Windows\MSW\Winform UI\SignInScreen\SignInScreen\bin\Debug\net5.0-windows\Syncfusion.Compression.Portable.dll
+F:\Study\3rdyrs_1st\C#Windows\MSW\Winform UI\SignInScreen\SignInScreen\bin\Debug\net5.0-windows\Syncfusion.DocIO.Portable.dll
+F:\Study\3rdyrs_1st\C#Windows\MSW\Winform UI\SignInScreen\SignInScreen\bin\Debug\net5.0-windows\Syncfusion.Licensing.dll
+F:\Study\3rdyrs_1st\C#Windows\MSW\Winform UI\SignInScreen\SignInScreen\bin\Debug\net5.0-windows\Syncfusion.OfficeChart.Portable.dll
+F:\Study\3rdyrs_1st\C#Windows\MSW\Winform UI\SignInScreen\SignInScreen\obj\Debug\net5.0-windows\SignInScreen.StatusScreen.resources

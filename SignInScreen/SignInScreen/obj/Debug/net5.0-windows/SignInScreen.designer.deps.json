@@ -41,6 +41,11 @@
           }
         }
       },
+      "NETStandard.Library/2.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -72,6 +77,51 @@
             "rid": "win-x86",
             "assetType": "native",
             "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "Syncfusion.Compression.Net.Core/19.3.0.54": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Compression.Portable.dll": {
+            "assemblyVersion": "19.3200.0.54",
+            "fileVersion": "19.3200.0.54"
+          }
+        }
+      },
+      "Syncfusion.DocIO.Net.Core/19.3.0.54": {
+        "dependencies": {
+          "Syncfusion.Compression.Net.Core": "19.3.0.54",
+          "Syncfusion.Licensing": "19.3.0.54",
+          "Syncfusion.OfficeChart.Net.Core": "19.3.0.54",
+          "System.Text.Encoding.CodePages": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.DocIO.Portable.dll": {
+            "assemblyVersion": "19.3200.0.54",
+            "fileVersion": "19.3200.0.54"
+          }
+        }
+      },
+      "Syncfusion.Licensing/19.3.0.54": {
+        "runtime": {
+          "lib/net5.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "19.3.0.54",
+            "fileVersion": "19.3.0.54"
+          }
+        }
+      },
+      "Syncfusion.OfficeChart.Net.Core/19.3.0.54": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "Syncfusion.Compression.Net.Core": "19.3.0.54"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.OfficeChart.Portable.dll": {
+            "assemblyVersion": "19.3200.0.54",
+            "fileVersion": "19.3200.0.54"
           }
         }
       },
@@ -143,6 +193,25 @@
             "fileVersion": "4.700.19.56404"
           }
         }
+      },
+      "System.Text.Encoding.CodePages/4.4.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
       }
     }
   },
@@ -167,6 +236,13 @@
       "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "path": "netstandard.library/2.0.0",
+      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
@@ -196,6 +272,34 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+    "Syncfusion.Compression.Net.Core/19.3.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SgwDTfi8SHFWcemLEcDvX5KfFebshhv+Qe3HFi0vaYhOePydo+D6/jBjGZ/7EBFJ1snBiBg8mEfSbUMIkvu5rQ==",
+      "path": "syncfusion.compression.net.core/19.3.0.54",
+      "hashPath": "syncfusion.compression.net.core.19.3.0.54.nupkg.sha512"
+    },
+    "Syncfusion.DocIO.Net.Core/19.3.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UTGgGjQcafgXyZ7ZziO+w1zYcIEfxZ9XjJFgA1aJLLmDaM57SgEiCcOhVNBXGo7F1QikO15B9/X7qrErbzM6PQ==",
+      "path": "syncfusion.docio.net.core/19.3.0.54",
+      "hashPath": "syncfusion.docio.net.core.19.3.0.54.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/19.3.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZPtwt1L70XuU98tTPhL9bTUmotIoUiTj+SijIKDDNoyX6ecjBINkAA/FKqBBRYOxVU/zsjU9qQB3BDxJlRJJ6Q==",
+      "path": "syncfusion.licensing/19.3.0.54",
+      "hashPath": "syncfusion.licensing.19.3.0.54.nupkg.sha512"
+    },
+    "Syncfusion.OfficeChart.Net.Core/19.3.0.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FU6GgGbkKGrFm9vNSVaXIq/RELb4pfq5vV+tqWjsczAWkuPug7AWMNTdI830wph46e9E+Zw1VmRg6TuSy9dZ/A==",
+      "path": "syncfusion.officechart.net.core/19.3.0.54",
+      "hashPath": "syncfusion.officechart.net.core.19.3.0.54.nupkg.sha512"
+    },
     "System.Data.SqlClient/4.8.3": {
       "type": "package",
       "serviceable": true,
@@ -216,6 +320,13 @@
       "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6JX7ZdaceBiLKLkYt8zJcp4xTJd1uYyXXEkPw6mnlUIjh1gZPIVKPtRXPmY5kLf6DwZmf5YLwR3QUrRonl7l0A==",
+      "path": "system.text.encoding.codepages/4.4.0",
+      "hashPath": "system.text.encoding.codepages.4.4.0.nupkg.sha512"
     }
   }
 }

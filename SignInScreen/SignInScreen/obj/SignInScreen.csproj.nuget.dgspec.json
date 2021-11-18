@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[15.0.4797.1003, )"
             },
+            "Syncfusion.DocIO.Net.Core": {
+              "target": "Package",
+              "version": "[19.3.0.54, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.3, )"

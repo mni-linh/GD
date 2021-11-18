@@ -22,5 +22,8 @@
     <Compile Update="Forms\FormTests.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="StatusScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
