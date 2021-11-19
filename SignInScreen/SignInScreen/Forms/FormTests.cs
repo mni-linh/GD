@@ -38,8 +38,6 @@ namespace SignInScreen.Forms
 
                 }
             }
-            //label14.ForeColor = Themes.SecondaryColor;
-            //label15.ForeColor = Themes.PrimaryColor;
         }
 
         private void panel1_MouseHover(object sender, EventArgs e)
@@ -63,19 +61,5 @@ namespace SignInScreen.Forms
             this.Hide();
 
         }
-
-        private void panelExam1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        /*
-private void btnCheck_Click(object sender, EventArgs e)
-{
-   //WordDocument document = new saWordDocument("Template.docx");
-   //TextSelection[] textSelections = document.FindAll("Your", true, true);
-  // lblOutput = textSelections.
-}*/
     }
 }

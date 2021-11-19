@@ -18,6 +18,8 @@ namespace SignInScreen
         private Random random;
         private int tempIndex;
         private Form activeForm;
+        //
+        private Panel leftBorderBtn;
 
         public AccountScreen()
         {
@@ -26,7 +28,10 @@ namespace SignInScreen
             this.Text = string.Empty;
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-
+            //
+            leftBorderBtn = new Panel();
+            leftBorderBtn.Size = new Size(7, 60);
+            panelMenu.Controls.Add(leftBorderBtn);
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -44,7 +49,16 @@ namespace SignInScreen
             string color = Themes.ColorList[index];
             return ColorTranslator.FromHtml(color);
         }
-        private void ActivateButton(object btnSender)
+
+        private struct RGBColors
+        {
+            public static Color color1 = Color.FromArgb(54, 89, 143);
+            //public static Color color3 = Color.FromArgb(253, 138, 114);
+            //public static Color color4 = Color.FromArgb(95, 77, 221);
+            //public static Color color5 = Color.FromArgb(24, 161, 251);
+        }
+
+        private void ActivateButton(object btnSender, Color color1)
         {
             if (btnSender != null)
             {
@@ -64,6 +78,11 @@ namespace SignInScreen
                     ///ColorTheme.PrimaryColor = color;
                     //ColorTheme.SecondaryColor = ColorTheme.ChangeColorBrightness(color, -0.3);
                     //btnCloseChildForm.Visible = true;
+                    // Left border button
+                    leftBorderBtn.BackColor = color1;
+                    leftBorderBtn.Location = new Point(0, currentButton.Location.Y);
+                    leftBorderBtn.Visible = false;
+                    leftBorderBtn.BringToFront();
 
                 }
             }
@@ -81,18 +100,13 @@ namespace SignInScreen
                 }
             }
         }
-
-        private void AccountScreen_Load(object sender, EventArgs e)
-        {
-
-        }
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
             {
                 activeForm.Close();
             }
-            ActivateButton(btnSender);
+            ActivateButton(btnSender, RGBColors.color1);
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -105,29 +119,34 @@ namespace SignInScreen
         }
         private void btnDashboard_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Forms.FormDashboard(), sender);
         }
 
         private void btnTest_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Forms.FormTests(), sender);
 
         }
 
         private void btnCourses_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Forms.FormCourses(), sender);
 
         }
 
-        private void btnbooks_Click(object sender, EventArgs e)
+        private void btnBooks_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Forms.FormBooks(), sender);
 
         }
 
         private void btnRedeem_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new Forms.FormRedeem(), sender);
 
         }
@@ -156,9 +175,6 @@ namespace SignInScreen
             this.WindowState = FormWindowState.Minimized;
 
         }
-
-
-
 
     }
 }

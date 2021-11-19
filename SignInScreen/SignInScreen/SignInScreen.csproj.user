@@ -16,7 +16,25 @@
     <Compile Update="Forms\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FormOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FormRedeem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormTask1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormTask2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormTask3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormTask4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormTask5.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\FormTests.cs">

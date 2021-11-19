@@ -69,7 +69,6 @@ namespace SignInScreen.Forms
             this.panelExam1.Name = "panelExam1";
             this.panelExam1.Size = new System.Drawing.Size(378, 195);
             this.panelExam1.TabIndex = 4;
-            this.panelExam1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelExam1_Paint);
             this.panelExam1.MouseHover += new System.EventHandler(this.panel1_MouseHover);
             // 
             // btnExam1
